@@ -81,6 +81,7 @@ function myfunction() {
     document.getElementById("out").innerHTML = '';
     if (!done) return;
     x = x.trim();
+    x = x.lowercase();
     var k = 0n;
     for (i = 0; i < x.length; ++i) {
       k = (k*257n+BigInt(x.charCodeAt(i))+1n)%pBig;
