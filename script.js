@@ -82,7 +82,6 @@ function myfunction() {
     if (!done) return;
     x = x.trim();
     x = x.toLowerCase();
-    console.log(x);
     var k = 0n;
     for (i = 0; i < x.length; ++i) {
       k = (k*257n+BigInt(x.charCodeAt(i))+1n)%pBig;
