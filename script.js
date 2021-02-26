@@ -11,7 +11,7 @@ var done = false;
 async function getData(){
   //console.log("ss");
   var table;
-  await fetch('https://raw.githubusercontent.com/farhanfuad35/lumos/main/data/E2Bdatabase.json')
+  await fetch('E2Bdatabase.json')
       .then(response => response.text())
       .then(data => {
         table = JSON.parse(data);
